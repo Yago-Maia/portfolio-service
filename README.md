@@ -37,6 +37,12 @@ Para acessar alguns endpoint's, é necessário criar um usuário no micro servi�
 
 ## Assets:
 
+### Reload assets
+Esse serviço faz comunicação com um serviço de ações. Para atualizar as ações do serviço, é necessário realizar uma chamada get nesse outro serviço. Não é necessário estar autenticado.
+```bash
+curl --location --request GET 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/reloadAssets'
+```
+
 ### Get all asset
 Recupar todas as ações registradas em nosso banco de dados. Acesso liberado para todos.
 ```bash
