@@ -40,26 +40,26 @@ Para acessar alguns endpoint's, é necessário criar um usuário no micro servi�
 ### Get all asset
 Recupar todas as ações registradas em nosso banco de dados. Acesso liberado para todos.
 ```bash
-curl --location --request GET 'http://localhost:8081/asset' \
+curl --location --request GET 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset' \
 --header 'Authorization: Bearer {token}}'
 ```
 
 ### Get asset by id
 Recupera uma ação de acordo com o id dela. Acesso liberado para todos.
 ```bash
-curl --location --request GET 'localhost:8081/asset/1'
+curl --location --request GET 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset/1'
 ```
 
 ### Get asset by code
 Recupera uma ação de acordo com o código dela. Acesso liberado para todos.
 ```bash
-curl --location --request GET 'localhost:8081/asset/SMTO3'
+curl --location --request GET 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset/SMTO3'
 ```
 
 ### Insert asset
 Insere uma ação no banco. Necessário envio do token contendo role ADMINISTRATOR.
 ```bash
-curl --location --request POST 'localhost:8081/asset' \
+curl --location --request POST 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset' \
 --header 'Authorization: {token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -71,7 +71,7 @@ curl --location --request POST 'localhost:8081/asset' \
 ### Update asset
 Atualiza uma ação no banco. Necessário envio do token contendo role ADMINISTRATOR.
 ```bash
-curl --location --request PUT 'localhost:8081/asset' \
+curl --location --request PUT 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset' \
 --header 'Authorization: {token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -84,7 +84,7 @@ curl --location --request PUT 'localhost:8081/asset' \
 ### Delete asset
 Deleta uma ação no banco. Necessário envio do token contendo role ADMINISTRATOR.
 ```bash
-curl --location --request DELETE 'localhost:8081/asset/1' \
+curl --location --request DELETE 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset/1' \
 --header 'Authorization: {token}'
 ```
 
@@ -93,21 +93,21 @@ curl --location --request DELETE 'localhost:8081/asset/1' \
 ### Get all portfolios
 Recupera todos as carteira registradas me nosso banco. Necessário envio do token contendo role ADMINISTRATOR.
 ```bash
-curl --location --request GET 'http://localhost:8081/portfolio' \
+curl --location --request GET 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio' \
 --header 'Authorization: Bearer {token}}'
 ```
 
 ### Get portfolio
 Recupera uma carteira de acordo com seu id. Necessário enviar o token de autenticação e ser o dono da carteira.
 ```bash
-curl --location --request GET 'localhost:8081/portfolio/2' \
+curl --location --request GET 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/2' \
 --header 'Authorization: {token}'
 ```
 
 ### Insert portfolio
 Cria uma carteira. Necessário enviar o token de autenticação e ser o dono da carteira.
 ```bash
-curl --location --request POST 'localhost:8081/portfolio' \
+curl --location --request POST 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio' \
 --header 'Authorization: {token}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -118,7 +118,7 @@ curl --location --request POST 'localhost:8081/portfolio' \
 ### Update portfolio
 Atualiza uma carteira. Necessário enviar token de autenticação e ser o dono da carteira.
 ```bash
-curl --location --request PUT 'http://localhost:8081/portfolio' \
+curl --location --request PUT 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio' \
 --header 'Authorization: {token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -130,14 +130,14 @@ curl --location --request PUT 'http://localhost:8081/portfolio' \
 ### Delete portfolio
 Deleta a carteira. Necessário enviar token de autenticação e ser o dono da carteira.
 ```bash
-curl --location --request DELETE 'http://localhost:8081/portfolio/1' \
+curl --location --request DELETE 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/1' \
 --header 'Authorization: {token}'
 ```
 
 ### Insert asset in portfolio
 Inserir ação em uma carteira. Necessário enviar token de autenticação e ser o dono da carteira.
 ```bash
-curl --location --request POST 'localhost:8081/portfolio/addAsset' \
+curl --location --request POST 'ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/addAsset' \
 --header 'Authorization: {token}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -149,12 +149,12 @@ curl --location --request POST 'localhost:8081/portfolio/addAsset' \
 ### Delete asset in portfolio
 Deletar uma ação da carteira. Necessário enviar token de autenticação e ser o dono da carteira.
 ```bash
-curl --location --request DELETE 'http://localhost:8081/portfolio/3/asset/TOTS3' \
+curl --location --request DELETE 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/3/asset/TOTS3' \
 --header 'Authorization: {token}'
 ```
 
 ## Swagger:
 Para acessar o Swagger é necessário acessar o link abaixo com o projeto em execução:
 ```bash
-http://localhost:8081/swagger-ui/
+http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/swagger-ui/
 ```

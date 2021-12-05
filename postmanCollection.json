@@ -24,12 +24,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/asset",
+							"raw": "http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"asset"
 							]
@@ -43,11 +43,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8081/asset/1",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset/1",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"asset",
 								"1"
@@ -62,11 +62,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8081/asset/code/SMTO3",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset/code/SMTO3",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"asset",
 								"code",
@@ -101,11 +101,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8081/asset",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"asset"
 							]
@@ -138,11 +138,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8081/asset",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"asset"
 							]
@@ -166,11 +166,11 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "localhost:8081/asset/1",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/asset/1",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"asset",
 								"1"
@@ -185,12 +185,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/reloadAssets",
+							"raw": "http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/reloadAssets",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"reloadAssets"
 							]
@@ -219,12 +219,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/portfolio",
+							"raw": "http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio"
 							]
@@ -248,11 +248,11 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8081/portfolio/2",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/2",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio",
 								"2"
@@ -286,11 +286,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8081/portfolio",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio"
 							]
@@ -323,12 +323,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8081/portfolio",
+							"raw": "http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio"
 							]
@@ -352,12 +352,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/portfolio/1",
+							"raw": "http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/1",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio",
 								"1"
@@ -391,11 +391,11 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8081/portfolio/addAsset",
+							"raw": "ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/addAsset",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio",
 								"addAsset"
@@ -420,12 +420,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8081/portfolio/3/asset/TOTS3",
+							"raw": "http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/3/asset/TOTS3",
 							"protocol": "http",
 							"host": [
-								"localhost"
+								"ec2-18-116-63-102.us-east-2.compute.amazonaws.com"
 							],
-							"port": "8081",
+							"port": "8080",
 							"path": [
 								"portfolio",
 								"3",
