@@ -8,23 +8,16 @@ docker pull yagogmaia/portfolio
 docker run yagogmaia/portfolio
 ```
 
-# Clonar e rodar projeto via maven
 ## Clonar o projeto:
 Acesse o diretório desejado para alocar o projeto pelo terminal e execute o comando:
 ```bash
 git clone https://github.com/Yago-Maia/portfolio.git
 ```
 
-## Instalação do Maven:
-Acesse o diretório pelo terminal e instale o Maven junto com as dependências necessárias para o projeto.
+## Swagger:
+Link para acesso ao swagger:
 ```bash
-mvn install
-```
-
-## Executar a aplicação:
-Ainda no terminal, executar o comando no diretório raiz do projeto.
-```bash
-mvn spring-boot:run
+http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/swagger-ui/
 ```
 
 ## Postman:
@@ -177,10 +170,4 @@ Deletar uma ação da carteira. Necessário enviar token de autenticação e ser
 ```bash
 curl --location --request DELETE 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/portfolio/3/asset/TOTS3' \
 --header 'Authorization: {token}'
-```
-
-## Swagger:
-Para acessar o Swagger é necessário acessar o link abaixo com o projeto em execução:
-```bash
-http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/swagger-ui/
 ```
