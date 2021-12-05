@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    url: jdbc:postgresql://portfolio-db.cjtfaas4r0oh.us-east-2.rds.amazonaws.com:5432/portfolio_db
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+security:
+  jwt:
+    expiration: 30
+    signature-key: byBjYWNob3JybyBsYXRl
+
+server:
+  port : 8081

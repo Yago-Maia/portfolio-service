@@ -1,0 +1,443 @@
+{
+	"info": {
+		"_postman_id": "c98ae701-cf0b-4e95-8215-b5903d16df33",
+		"name": "TCC - Portfolio Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "Get all assets",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjE1LCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NDM3NDZ9.9sEV5tDNdYd6ZBlI5XFyjzY468W8sIFoY1d_BtkYvnBabu5yMAL6jVDJZFGR3bvY7nx3QBNLGJX1m6OuXQ_hxw",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/asset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"asset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get asset by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/asset/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"asset",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get asset by code",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/asset/code/SMTO3",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"asset",
+								"code",
+								"SMTO3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert asset",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg1NzE4MDF9.uHDBdY5s5yuAfqeSntFk9dBVZNa1Ro_m2hBVcvOSRtbqu0DrMDV7nEVYIijS8865XVGR3AjsZXFhC-7-hGfSng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"code\": \"VALE3\",\n    \"name\": \"Vale S.A.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/asset",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"asset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update asset",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg1NzE4MDF9.uHDBdY5s5yuAfqeSntFk9dBVZNa1Ro_m2hBVcvOSRtbqu0DrMDV7nEVYIijS8865XVGR3AjsZXFhC-7-hGfSng",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"code\": \"VALE3\",\n    \"name\": \"Vale S.A.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/asset",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"asset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete asset",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/asset/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"asset",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reload assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/reloadAssets",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"reloadAssets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Portfolio",
+			"item": [
+				{
+					"name": "Get all portfolios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/portfolio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Portfolio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/portfolio/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert portfolio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Fiquei rico cedo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/portfolio",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update portfolio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Fiquei rico cedo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/portfolio",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete porfolio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/portfolio/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Insert asset in portfolio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"idPortfolio\": 3,\n    \"codeAsset\": \"SMTO3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8081/portfolio/addAsset",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio",
+								"addAsset"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete asset portfolio",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJpZFVzZXIiOjIwLCJzdWIiOiJ5YWdvZ21haWFAZ21haWwuY29tIiwicm9sZSI6IkFETUlOSVNUUkFUT1IiLCJleHAiOjE2Mzg2NTY1MjR9.d49qRTh7KVSIb6zKI_-s9o3vLs5b6IWaj-dEOIvemIEw1qkCmKMMWW9ug34HOEq1hxzlEz8fHUd7MKh_iN4r2w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/portfolio/3/asset/TOTS3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"portfolio",
+								"3",
+								"asset",
+								"TOTS3"
+							]
+						},
+						"description": "Deletar ação de uma carteira"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
