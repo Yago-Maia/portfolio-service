@@ -34,11 +34,31 @@ Segue nome dos Endpoint's, suas descrições e permissões:
 
 ### Token de acesso
 Para acessar alguns endpoint's, é necessário criar um usuário no micro serviço de autenticação e utilizar o token jwt e, em alguns endpoint's, é necessário possuir permissão de administrador, confome descrito abaixo.
+```bash
+curl --location --request POST 'http://ec2-52-23-254-85.compute-1.amazonaws.com:8080/user' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "firstName": "Nome",
+    "lastName": "UltimoNome",
+    "email": "email@gmail.com",
+    "password": "senha",
+    "role": "SIMPLE"
+}'
+```
+```bash
+curl --location --request POST 'http://ec2-52-23-254-85.compute-1.amazonaws.com:8080/auth' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "email@gmail.com",
+    "password": "senha"
+}'
+```
+Essa última chamada irá retornar um token jwt. Utilize ele para os endpoint's necessários.
 
 ## Assets:
 
 ### Reload assets
-Esse serviço faz comunicação com um serviço de ações. Para atualizar as ações do serviço, é necessário realizar uma chamada get nesse outro serviço. Não é necessário estar autenticado.
+Esse serviço faz comunicação com um serviço de ações. Para atualizar as ações do serviço, é necessário realizar uma requisição get nesse outro serviço. Não é necessário estar autenticado.
 ```bash
 curl --location --request GET 'http://ec2-18-116-63-102.us-east-2.compute.amazonaws.com:8080/reloadAssets'
 ```
